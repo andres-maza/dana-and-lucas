@@ -187,7 +187,7 @@ body {
     margin-bottom: 30px;
   }
   .date-time-location .dt__time {
-    max-width: 166px;
+    max-width: 170px;
   }
 }
 
@@ -244,7 +244,7 @@ body {
 }
 @media (max-width: 640px) {
   .main-content .section-title {
-    max-width: 200px;
+    max-width: 205px;
   }
 }
 
