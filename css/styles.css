@@ -337,7 +337,9 @@ h3.section-title + .mc__section {
   font-size: 1.375em;
   color: #7CA8AD;
   border: 1px solid #7CA8AD;
-  padding: 15px 35px 10px;
+  padding: 0 35px; /* Vertical Align IE 11 */
+  height: 50px; /* Vertical Align IE 11 */
+  line-height: 53px; /* Vertical Align IE 11 */
   letter-spacing: 2px;
   margin: 0 10px;
   transition: .2s ease-in-out;
@@ -350,6 +352,10 @@ h3.section-title + .mc__section {
 @media (max-width: 768px) {
   .btn-1 {
     height: 60px;
+  }
+  .btn-2 {
+    height: 45px;
+    line-height: 50px; /* Vertical Align IE 11 */
   }
 }
 @media (max-width: 640px) {
