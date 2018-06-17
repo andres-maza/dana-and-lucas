@@ -25,6 +25,8 @@ body {
 }
 
 .page-wrap {
+  display: block;
+  position: relative;
   background-color: rgba(255,255,255,1);
   width: 90%;
   max-width: 800px;
@@ -32,6 +34,7 @@ body {
   border: 10px solid #7CA8AD;
   box-sizing: border-box;
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, .15);
+  animation: 1s ease-in-out 0s fade-in;
 }
 @media (max-width: 768px) {
   .page-wrap {
@@ -44,12 +47,31 @@ body {
   }
 }
 
+.main-nav, .main-hero {
+  animation: 1s ease-in-out fade-in;
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 /* Main Navigation  */
 
 .main-nav {
+  position: relative;
   display: flex;
   width: auto;
   margin: 15px 15px;
+  z-index: 999;
+  background-color: #FFF;
+  transition: top .25s ease-in-out;
 }
 .main-nav .main-nav-btn {
   flex: 1;
@@ -61,6 +83,11 @@ body {
 .main-nav .main-nav-btn:last-child {
   margin-left: 1px;
 }
+.main-nav.is-fixed {
+  top: 15px !important;
+  left: auto !important;
+  right: auto !important;
+}
 
 /*  Page Elements  */
 
@@ -70,6 +97,7 @@ body {
 }
 .main-hero {
   position: relative;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .main-hero, .date-time-location {
@@ -108,6 +136,17 @@ body {
   .main-hero__ornament {
     max-width: 65px;
     margin: 20px auto 0 auto;
+  }
+}
+
+.footer-icon {
+  max-width: 130px;
+  margin: 0 auto 55px auto;
+}
+@media (max-width: 640px) {
+  .footer-icon {
+    max-width: 115px;
+    margin: 0 auto 35px auto;
   }
 }
 
@@ -154,7 +193,104 @@ body {
 @media (max-width: 640px) {
   .dt__location__buttons {
     margin-top: 10px;
-    margin-bottom: 60px
+    margin-bottom: 55px
+  }
+}
+
+.full-width-image {
+  width: 100%;
+  margin-bottom: 60px;
+}
+@media (max-width: 640px) {
+  .full-width-image {
+    margin-bottom: 40px;
+  }
+}
+
+.main-content .mc__section {
+  margin-bottom: 65px;
+}
+.main-content .mc__section:last-child {
+  margin-bottom: 55px;
+}
+@media (max-width: 768px) {
+  .main-content .mc__section {
+    margin-bottom: 55px;
+  }
+}
+@media (max-width: 640px) {
+  .main-content .mc__section {
+    margin-bottom: 40px;
+  }
+  .main-content .mc__section:last-child {
+    margin-bottom: 35px;
+  }
+}
+
+.main-content .section-title {
+  max-width: 405px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .main-content .section-title {
+    max-width: 355px;
+  }
+}
+@media (max-width: 640px) {
+  .main-content .section-title {
+    max-width: 200px;
+  }
+}
+
+.mc__1-col-image {
+  width: 90%;
+  max-width: 645px;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .mc__1-col-image {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 640px) {
+  .mc__1-col-image {
+    margin-bottom: 20px;
+  }
+}
+
+h3.section-title + .mc__section {
+  margin-top: 45px;
+}
+@media (max-width: 640px) {
+  h3.section-title + .mc__section {
+    margin-top: 35px;
+  }
+}
+
+.main-content .mc__paragraph {
+  max-width: 535px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .main-content .mc__paragraph {
+    max-width: 455px;
+  }
+}
+@media (max-width: 640px) {
+  .main-content .mc__paragraph {
+    max-width: 320px;
+    width: 80%;
+  }
+}
+
+.made-by {
+  max-width: 800px;
+  width: 70%;
+  margin: 40px auto 60px auto;
+}
+@media (max-width: 640px) {
+  .made-by {
+    margin: 20px auto 20px auto;
   }
 }
 
@@ -202,7 +338,14 @@ body {
 
 /*  Typography  */
 
-.main-title, .sub-title, .section-title {
+p, .mc__paragraph {
+  color: #7BA8B3;
+  font-family: 'Courier', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.main-title, .sub-title, .section-title, .section-sub-title {
   font-family: 'Luna ITC Std', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -261,11 +404,35 @@ h3.section-title + h3.section-title {
 }
 @media (max-width: 640px) {
   .section-title {
-    font-size: 1.55em;
+    font-size: 1.6em;
   }
   .label + h3.section-title {
     margin-top: 10px;
   }
+}
+
+.section-sub-title {
+  font-size: 1.6875em;
+  margin: 0;
+}
+
+h4.section-sub-title + p.mc__paragraph {
+  margin-top: 25px;
+}
+@media (max-width: 768px) {
+  h4.section-sub-title + p.mc__paragraph {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 640px) {
+  .section-sub-title {
+    font-size: 1.2875em;
+  }
+}
+
+.small-text {
+  font-family: 'Courier', sans-serif;
+  font-size: 13px;
 }
 
 .label {
