@@ -6,11 +6,8 @@
 }
 
 @font-face {
-  font-family: 'LunaITCStd-Bold';
-  /* src: url('../fonts/LunaITCStd-Bold.eot'),
-  src: url('../fonts/LunaITCStd-Bold.eoteot?#iefix') format('embedded-opentype'),
-  src: url('../fonts/LunaITCStd-Bold.woff') format('woff'), */
-  src: url('../fonts/LunaITCStd-Bold.otf') format('opentype');
+  font-family: 'Luna ITC Std Bold';
+  src: url('../fonts/LunaITCStd-Bold.woff') format('woff');
 }
 
 body {
@@ -377,7 +374,7 @@ p, .mc__paragraph {
 }
 
 .main-title, .sub-title, .section-title, .section-sub-title {
-  font-family: 'LunaITCStd-Bold', sans-serif;
+  font-family: 'Luna ITC Std Bold', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
