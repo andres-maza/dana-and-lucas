@@ -8,7 +8,6 @@ $(document).ready(function(){
     })
     .setPin("#main-nav") // pins the element for the the scene's duration
     .setClassToggle('#main-nav', 'is-fixed')
-    .addIndicators()
     .addTo(controller); // assign the scene to the controller
 
 })
