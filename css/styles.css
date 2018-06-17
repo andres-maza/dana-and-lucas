@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'Estilo';
-  src: url('../fonts/Estilo-Regular.otf') format('otf');
+  src: url('../fonts/Estilo Regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Luna ITC Std';
-  src: url('../fonts/LunaITCStd-Bold.otf') format('otf');
+  src: url('../fonts/LunaITCStd-Bold.otf') format('opentype');
 }
 
 body {
