@@ -117,7 +117,7 @@ body {
   text-align: center;
 }
 .main-hero, .date-time-location {
-  max-width: 475px;
+  max-width: 495px;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
@@ -166,7 +166,7 @@ body {
   margin-top: 65px;
 }
 .date-time-location .dt__time {
-  max-width: 335px;
+  max-width: 350px;
   margin: 0 auto;
 }
 .date-time-location .dt__location .label + h3.section-title {
