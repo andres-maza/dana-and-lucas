@@ -23,6 +23,11 @@ body {
     font-size: 14px;
   }
 }
+@media (max-width: 640px) {
+  body {
+    margin: 0;
+  }
+}
 
 .page-wrap {
   display: block;
@@ -43,7 +48,9 @@ body {
 }
 @media (max-width: 640px) {
   .page-wrap {
-    margin-top: 20px;
+    width: calc(100% - 20px);
+    max-width: 375px;
+    margin: 10px auto 0;
   }
 }
 @keyframes fade-in {
@@ -217,6 +224,8 @@ body {
 }
 @media (max-width: 640px) {
   .main-content .mc__section {
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 40px;
   }
   .main-content .mc__section:last-child {
@@ -251,6 +260,7 @@ body {
 }
 @media (max-width: 640px) {
   .mc__1-col-image {
+    width: 100%;
     margin-bottom: 20px;
   }
 }
@@ -276,7 +286,7 @@ h3.section-title + .mc__section {
 @media (max-width: 640px) {
   .main-content .mc__paragraph {
     max-width: 320px;
-    width: 80%;
+    width: 100%;
   }
 }
 
