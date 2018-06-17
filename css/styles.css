@@ -6,7 +6,7 @@
 }
 
 @font-face {
-  font-family: 'LunaITCStd';
+  font-family: 'LunaITCStd-Bold';
   src: url('../fonts/LunaITCStd-Bold.eot'),
   src: url('../fonts/LunaITCStd-Bold.eoteot?#iefix') format('embedded-opentype'),
   src: url('../fonts/LunaITCStd-Bold.woff') format('woff'),
@@ -377,7 +377,7 @@ p, .mc__paragraph {
 }
 
 .main-title, .sub-title, .section-title, .section-sub-title {
-  font-family: 'LunaITCStd', sans-serif;
+  font-family: 'LunaITCStd-Bold', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
