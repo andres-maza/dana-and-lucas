@@ -131,20 +131,6 @@ body {
   }
 }
 
-/* .main-hero .mh__text {
-    animation: 1.5s cubic-bezier(0.510, -0.020, 0.000, 0.995) main-hero-text-animation;
-}
-@keyframes main-hero-text-animation {
-  0% {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-} */
-
 .main-hero__ornament {
   max-width: 75px;
   margin: 30px auto 0 auto;
@@ -161,7 +147,8 @@ body {
 }
 
 .date-time-location .dt__date h2.sub-title {
-  margin-top: 65px;
+  max-width: 475px;
+  margin: 65px auto 0 auto;
 }
 .date-time-location .dt__time {
   max-width: 350px;
