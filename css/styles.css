@@ -148,7 +148,12 @@ body {
 
 .date-time-location .dt__date h2.sub-title {
   max-width: 475px;
-  margin: 65px auto 0 auto;
+  margin: 65px auto 20px auto;
+}
+@media (max-width: 640px) {
+  .date-time-location .dt__date h2.sub-title {
+    margin-bottom: 10px;
+  }
 }
 .date-time-location .dt__time {
   max-width: 350px;
