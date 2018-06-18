@@ -13,7 +13,8 @@ $(document).ready(function(){
     var tween = TweenMax.from($(this), 0.3, {autoAlpha: 0, ease:Linear.easeNone});
 
     var scene = new ScrollMagic.Scene({
-      triggerElement: this
+      triggerElement: this,
+      triggerHook: 0.8
     })
     .setTween(tween)
     .reverse(false)
