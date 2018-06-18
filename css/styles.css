@@ -92,7 +92,7 @@ body {
   padding: 15px 15px 20px;
   z-index: 999;
   background-color: #FFF;
-  transition: padding .10s ease-out;
+  transition: padding .10s ease-in-out;
 }
 .main-nav .main-nav-btn {
   flex: 1;
