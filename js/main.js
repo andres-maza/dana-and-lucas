@@ -16,6 +16,7 @@ $(document).ready(function(){
       triggerElement: this
     })
     .setTween(tween)
+    .reverse(false)
     .addTo(controller);
   })
 })
