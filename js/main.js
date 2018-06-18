@@ -17,7 +17,6 @@ $(document).ready(function(){
       triggerHook: 0.85
     })
     .setTween(tween)
-    .addIndicators()
     .reverse(false)
     .addTo(controller);
   })
