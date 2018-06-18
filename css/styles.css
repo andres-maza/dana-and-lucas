@@ -100,10 +100,12 @@ body {
   justify-content: space-between;
 }
 .main-nav .main-nav-btn:first-child {
-  margin-right: 1px;
+  /* margin-right: 1px; */
+  border-right: solid 1px #FFF;
 }
 .main-nav .main-nav-btn:last-child {
-  margin-left: 1px;
+  /* margin-left: 1px; */
+  border-left: solid 1px #FFF;
 }
 .main-nav.is-fixed {
   left: auto !important;
