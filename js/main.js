@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  var veight;
   var controller = new ScrollMagic.Controller();
 
   var pinMainNav = new ScrollMagic.Scene({
@@ -10,4 +9,13 @@ $(document).ready(function(){
     .setClassToggle('#main-nav', 'is-fixed')
     .addTo(controller); // assign the scene to the controller
 
+  $('.fade-in').each(function() {
+    var tween = TweenMax.from($(this), 0.3, {autoAlpha: 0, ease:Linear.easeNone});
+
+    var scene = new ScrollMagic.Scene({
+      triggerElement: this
+    })
+    .setTween(tween)
+    .addTo(controller);
+  })
 })
